@@ -25,6 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/first_name"
+                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 />
 
@@ -34,13 +35,13 @@
                 android:layout_height="46dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:background="@android:color/darker_gray"
+                android:background="@color/antiflashwhite"
                 android:hint="@string/first_name"
+                android:textColorHint="@color/granitegrey"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:padding="7dp"
-                android:text=""
-                />
+                android:text="" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,15 +54,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/last_name"
+                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 />
 
             <EditText
                 android:id="@+id/last_name"
                 android:layout_width="188dp"
-
                 android:layout_height="46dp"
-                android:background="@android:color/darker_gray"
+                android:textColorHint="@color/granitegrey"
+                android:background="@color/antiflashwhite"
                 android:hint="@string/last_name"
                 android:importantForAutofill="no"
                 android:inputType="text"
@@ -82,8 +84,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gender"
-            android:textSize="20sp"
-            />
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
         <RadioGroup
             android:id="@+id/radio_group_gender"
@@ -96,10 +98,9 @@
             <RadioButton
                 android:id="@+id/radio_btn_male"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:checked="false"
-                android:text="@string/male"
-                />
+                android:text="@string/male" />
 
             <RadioButton
                 android:id="@+id/radio_btn_female"
@@ -121,6 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/birthday"
+            android:textColor="@android:color/black"
             android:textSize="20sp"
             />
 
@@ -136,7 +138,8 @@
                 android:layout_height="46dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:background="@android:color/darker_gray"
+                android:textColorHint="@color/granitegrey"
+                android:background="@color/antiflashwhite"
                 android:hint="@string/birthday"
                 android:importantForAutofill="no"
                 android:inputType="date"
@@ -146,12 +149,10 @@
 
             <Button
                 android:id="@+id/birthday_select"
-                android:layout_width="108dp"
-                android:layout_height="70dp"
+                android:layout_width="110dp"
+                android:layout_height="59dp"
                 android:text="@string/select"
-                android:textSize="19sp"
-                android:onClick="setDate"
-                />
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -166,21 +167,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
             android:text="@string/address"
             android:textSize="20sp"
             />
 
         <EditText
             android:id="@+id/address"
-            android:layout_width="376dp"
+            android:layout_width="380dp"
             android:layout_height="90dp"
-            android:background="@android:color/darker_gray"
+            android:background="@color/antiflashwhite"
             android:hint="@string/address"
+            android:textColorHint="@color/granitegrey"
             android:importantForAutofill="no"
             android:inputType="text"
-            android:padding="7dp"
-            android:text=""
-            />
+            android:padding="10dp"
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -194,20 +196,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/email"
+            android:textColor="@android:color/black"
             android:textSize="20sp"
             />
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="376dp"
+            android:layout_width="380dp"
             android:layout_height="46dp"
-            android:background="@android:color/darker_gray"
+            android:background="@color/antiflashwhite"
             android:hint="@string/email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
+            android:textColorHint="@color/granitegrey"
             android:padding="7dp"
-            android:text=""
-            />
+            android:text="" />
     </LinearLayout>
 
     <CheckBox
@@ -225,23 +228,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/register"
-            android:layout_width="254dp"
-            android:layout_height="63dp"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
             android:layout_marginTop="30dp"
             android:text="@string/register"
-            android:textSize="21sp"
-            />
+            android:textSize="21sp" />
 
         <TextView
             android:id="@+id/register_status"
+            android:layout_margin="15px"
+            android:textColor="@android:color/holo_red_light"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 
