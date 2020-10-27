@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:paddingRight="16dp"
+    >
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/first_name"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/first_name"
@@ -34,19 +39,22 @@
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:padding="7dp"
-                android:text="" />
+                android:text=""
+                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/last_name"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/last_name"
@@ -55,10 +63,11 @@
                 android:layout_height="46dp"
                 android:background="@android:color/darker_gray"
                 android:hint="@string/last_name"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:padding="7dp"
                 android:text=""
-                android:importantForAutofill="no" />
+                />
         </LinearLayout>
     </LinearLayout>
 
@@ -66,19 +75,22 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gender"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
 
         <RadioGroup
             android:id="@+id/radio_group_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
 
             <RadioButton
@@ -86,13 +98,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="@string/male" />
+                android:text="@string/male"
+                />
 
             <RadioButton
                 android:id="@+id/radio_btn_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/female" />
+                android:text="@string/female"
+                />
         </RadioGroup>
     </LinearLayout>
 
@@ -100,22 +114,25 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/birthday"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
             <EditText
                 android:id="@+id/birthday"
-                android:layout_width="264dp"
+                android:layout_width="243dp"
                 android:layout_height="46dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
@@ -124,15 +141,17 @@
                 android:importantForAutofill="no"
                 android:inputType="date"
                 android:padding="7dp"
-                android:text="" />
+                android:text=""
+                />
 
             <Button
                 android:id="@+id/birthday_select"
-                android:layout_width="93dp"
-                android:layout_height="57dp"
-                android:background="@android:color/darker_gray"
+                android:layout_width="108dp"
+                android:layout_height="70dp"
                 android:text="@string/select"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                android:onClick="setDate"
+                />
         </LinearLayout>
 
     </LinearLayout>
@@ -141,13 +160,15 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/address"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
 
         <EditText
             android:id="@+id/address"
@@ -155,23 +176,26 @@
             android:layout_height="90dp"
             android:background="@android:color/darker_gray"
             android:hint="@string/address"
+            android:importantForAutofill="no"
+            android:inputType="text"
             android:padding="7dp"
             android:text=""
-            android:importantForAutofill="no"
-            android:inputType="text" />
+            />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/email"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
 
         <EditText
             android:id="@+id/email"
@@ -179,10 +203,11 @@
             android:layout_height="46dp"
             android:background="@android:color/darker_gray"
             android:hint="@string/email"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:padding="7dp"
             android:text=""
-            android:importantForAutofill="no" />
+            />
     </LinearLayout>
 
     <CheckBox
@@ -192,14 +217,16 @@
         android:layout_marginTop="15dp"
         android:checked="false"
         android:text="@string/i_agree_to_terms_of_use"
-        android:textSize="19sp" />
+        android:textSize="19sp"
+        />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <Button
             android:id="@+id/register"
@@ -207,7 +234,14 @@
             android:layout_height="63dp"
             android:layout_marginTop="30dp"
             android:text="@string/register"
-            android:textSize="21sp" />
+            android:textSize="21sp"
+            />
+
+        <TextView
+            android:id="@+id/register_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
     </LinearLayout>
 
 
